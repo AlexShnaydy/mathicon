@@ -1,0 +1,7 @@
+{% extends "corpus/base.html" %}
+{% block title %}{{ text.title }}{% endblock %}
+{% block content %}
+<h2>{{ text.title }}</h2>
+<p class="meta">Математических аннотаций: {{ n_ann }}.</p>
+{% for s in sentences %}<p>{{ s }}</p>{% endfor %}
+{% endblock %}

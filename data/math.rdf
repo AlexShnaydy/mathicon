@@ -1,0 +1,1447 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#subClassOf">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<label xml:lang="ru">subClassOf</label>
+	<label xml:lang="en">subClassOf</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<label xml:lang="ru">type</label>
+	<label xml:lang="en">type</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<label xml:lang="ru">label</label>
+	<label xml:lang="en">label</label>
+	<range>http://www.w3.org/2001/XMLSchema#string</range>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#comment">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<label xml:lang="ru">comment</label>
+	<label xml:lang="en">comment</label>
+	<range>http://www.w3.org/2001/XMLSchema#string</range>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#subPropertyOf">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<label xml:lang="ru">subPropertyOf</label>
+	<label xml:lang="en">subPropertyOf</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#a7357b05d4f14e2cad12d6491fd6616b36">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="en">Logical predicate</label>
+	<label xml:lang="ru">Логический предикат</label>
+	<comment xml:lang="en">Returns truth value (0/1)</comment>
+	<comment xml:lang="ru">Возвращает значение истинности (0/1)</comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#a7357b05d4f14e2cad12d6491fd6616b39">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="en">Function</label>
+	<label xml:lang="ru">Функция_класс</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#a7357b05d4f14e2cad12d6491fd6616b40">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#d702d18d637a40d38957eefcefba86ac87"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="en">Equal to</label>
+	<label xml:lang="ru">Равен</label>
+	<label xml:lang="symbol">=</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#d702d18d637a40d38957eefcefba86ac87">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#a7357b05d4f14e2cad12d6491fd6616b36"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="en">Comparison</label>
+	<label xml:lang="ru">Сравнение</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#a7357b05d4f14e2cad12d6491fd6616b41">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#d702d18d637a40d38957eefcefba86ac87"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="en">Inequal</label>
+	<label xml:lang="ru">Неравен</label>
+	<label xml:lang="symbol">≠</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#a7357b05d4f14e2cad12d6491fd6616b42">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#d702d18d637a40d38957eefcefba86ac87"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="en">Greater than</label>
+	<label xml:lang="ru">Больше</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#a7357b05d4f14e2cad12d6491fd6616b43">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#d702d18d637a40d38957eefcefba86ac87"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="en">Less than</label>
+	<label xml:lang="ru">Меньше</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#a7357b05d4f14e2cad12d6491fd6616b44">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#d702d18d637a40d38957eefcefba86ac87"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="en">Greater than or equal to</label>
+	<label xml:lang="ru">Больше или равно</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#a7357b05d4f14e2cad12d6491fd6616b45">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#d702d18d637a40d38957eefcefba86ac87"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="en">Less than or equal to</label>
+	<label xml:lang="ru">Меньше или равно</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#a7357b05d4f14e2cad12d6491fd6616b46">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="en">Operation</label>
+	<label xml:lang="ru">Операция</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#a7357b05d4f14e2cad12d6491fd6616b48">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#a7357b05d4f14e2cad12d6491fd6616b46"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="en">Subtraction</label>
+	<label xml:lang="ru">Вычитание</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#a7357b05d4f14e2cad12d6491fd6616b49">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#a7357b05d4f14e2cad12d6491fd6616b46"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="en">Multiplication</label>
+	<label xml:lang="ru">Умножение</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#a7357b05d4f14e2cad12d6491fd6616b50">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#a7357b05d4f14e2cad12d6491fd6616b46"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="en">Division</label>
+	<label xml:lang="ru">Деление</label>
+	<e0c286e3ae4def96cc5fc61d91b09853 xmlns="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#72">/div(arg1, arg2)</e0c286e3ae4def96cc5fc61d91b09853>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#72e0c286e3ae4def96cc5fc61d91b09853">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<label xml:lang="ru">latex_formula</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#a7357b05d4f14e2cad12d6491fd6616b51">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#a7357b05d4f14e2cad12d6491fd6616b46"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="en">Exponentation</label>
+	<label xml:lang="ru">Возведение в степень</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#a7357b05d4f14e2cad12d6491fd6616b52">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#a7357b05d4f14e2cad12d6491fd6616b46"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="en">Root</label>
+	<label xml:lang="ru">Корень</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#a7357b05d4f14e2cad12d6491fd6616b57">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#a7357b05d4f14e2cad12d6491fd6616b46"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="en">Addition</label>
+	<label xml:lang="ru">Сложение</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#d702d18d637a40d38957eefcefba86ac35">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#a7357b05d4f14e2cad12d6491fd6616b39"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="en">Defined Function</label>
+	<label xml:lang="symbol">f(x)</label>
+	<label xml:lang="ru">Определённая функция</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#d702d18d637a40d38957eefcefba86ac36">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="en">Term</label>
+	<label xml:lang="ru">Терм</label>
+	<comment xml:lang="ru">Не имеет аргументов, сам заполняет аргументные слоты</comment>
+	<comment xml:lang="en">Has no arguments, rather fills argument slots</comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#d702d18d637a40d38957eefcefba86ac66">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#d702d18d637a40d38957eefcefba86ac36"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="ru">Переменная_класс</label>
+	<label xml:lang="en">Variable_class</label>
+	<comment xml:lang="en">When tagging, write the letter into the Name field</comment>
+	<comment xml:lang="ru">При разметке впишите название переменной латиницей в поле "Name". Пример: икс → x; игрек → y</comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#d702d18d637a40d38957eefcefba86ac67">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#d702d18d637a40d38957eefcefba86ac36"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="en">Constant</label>
+	<label xml:lang="ru">Константа</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#d702d18d637a40d38957eefcefba86ac70">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#d702d18d637a40d38957eefcefba86ac36"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="ru">Число_класс</label>
+	<label xml:lang="en">Number_class</label>
+	<comment xml:lang="en">When tagging, write the number in decimal in the Name field</comment>
+	<comment xml:lang="ru">При аннотации запишите числовое значение в поле Name</comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#d702d18d637a40d38957eefcefba86ac72">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#a7357b05d4f14e2cad12d6491fd6616b39"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="en">Trigonometric</label>
+	<label xml:lang="ru">Тригонометрическая</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#d702d18d637a40d38957eefcefba86ac73">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#d702d18d637a40d38957eefcefba86ac72"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="en">Sine</label>
+	<label xml:lang="symbol">sin</label>
+	<label xml:lang="ru">Синус</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#d702d18d637a40d38957eefcefba86ac74">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#d702d18d637a40d38957eefcefba86ac72"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="en">Cosine</label>
+	<label xml:lang="symbol">cosin</label>
+	<label xml:lang="ru">Косинус</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#d702d18d637a40d38957eefcefba86ac75">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#d702d18d637a40d38957eefcefba86ac72"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="en">Tangent</label>
+	<label xml:lang="symbol">tan</label>
+	<label>Тангенс</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#d702d18d637a40d38957eefcefba86ac76">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#d702d18d637a40d38957eefcefba86ac72"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="en">Cotangent</label>
+	<label xml:lang="symbol">cotan</label>
+	<label>Котангенс</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#d702d18d637a40d38957eefcefba86ac77">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#d702d18d637a40d38957eefcefba86ac72"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="en">Secant</label>
+	<label xml:lang="symbol">sec</label>
+	<label>Секанс</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#d702d18d637a40d38957eefcefba86ac78">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#d702d18d637a40d38957eefcefba86ac72"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="en">Cosecant</label>
+	<label xml:lang="symbol">cosec</label>
+	<label>Косеканс</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#d702d18d637a40d38957eefcefba86ac79">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#a7357b05d4f14e2cad12d6491fd6616b39"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="en">Factorial</label>
+	<label xml:lang="symbol">x!</label>
+	<label xml:lang="ru">Факториал</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#d702d18d637a40d38957eefcefba86ac80">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#a7357b05d4f14e2cad12d6491fd6616b39"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="en">Absolute value</label>
+	<label xml:lang="symbol">|x|</label>
+	<label xml:lang="ru">Модуль</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#d702d18d637a40d38957eefcefba86ac81">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#a7357b05d4f14e2cad12d6491fd6616b39"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="en">Derivative</label>
+	<label xml:lang="ru">Производная</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#d702d18d637a40d38957eefcefba86ac82">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#d702d18d637a40d38957eefcefba86ac66"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="en">Parameter</label>
+	<label xml:lang="ru">Параметр</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#d702d18d637a40d38957eefcefba86ac83">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#d702d18d637a40d38957eefcefba86ac66"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="ru">Неизвестная переменная</label>
+	<label xml:lang="en">Unknown variable</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#d702d18d637a40d38957eefcefba86ac84">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#a7357b05d4f14e2cad12d6491fd6616b39"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="en">Big-O</label>
+	<label xml:lang="symbol">O(x)</label>
+	<label xml:lang="ru">О-большое</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#d702d18d637a40d38957eefcefba86ac85">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#a7357b05d4f14e2cad12d6491fd6616b39"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="en">Small-o</label>
+	<label xml:lang="symbol">o(x)</label>
+	<label xml:lang="ru">о-малое</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#d702d18d637a40d38957eefcefba86ac86">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#a7357b05d4f14e2cad12d6491fd6616b36"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="en">Approaches</label>
+	<label xml:lang="ru">Стремится</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#d702d18d637a40d38957eefcefba86ac91">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="en">Condition</label>
+	<label xml:lang="ru">Условие</label>
+	<comment xml:lang="ru">Используется для выражений "если... то..."</comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#ddd660bf9e63419aa13536da3f09172711">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#a7357b05d4f14e2cad12d6491fd6616b36"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="en">Set Comparison</label>
+	<label xml:lang="ru">Сравнение множеств</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#ddd660bf9e63419aa13536da3f09172712">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#ddd660bf9e63419aa13536da3f09172711"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="en">Subset</label>
+	<label xml:lang="ru">Подмножество</label>
+	<label xml:lang="symbol">⊂</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#ddd660bf9e63419aa13536da3f09172713">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#ddd660bf9e63419aa13536da3f09172711"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="en">Superset</label>
+	<label xml:lang="ru">Надмножество</label>
+	<label xml:lang="symbol">⊃</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#ddd660bf9e63419aa13536da3f09172714">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#a7357b05d4f14e2cad12d6491fd6616b36"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="en">Divisibility</label>
+	<label xml:lang="ru">Делимость</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#ddd660bf9e63419aa13536da3f09172715">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#ddd660bf9e63419aa13536da3f09172714"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="en">Even</label>
+	<label xml:lang="ru">Чётное</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#ddd660bf9e63419aa13536da3f09172716">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#ddd660bf9e63419aa13536da3f09172714"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="en">Odd</label>
+	<label xml:lang="ru">Нечётное</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#ddd660bf9e63419aa13536da3f09172717">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#ddd660bf9e63419aa13536da3f09172714"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="en">Divisible by</label>
+	<label xml:lang="symbol">⫶</label>
+	<label xml:lang="ru">Делится на</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#ddd660bf9e63419aa13536da3f09172718">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="en">Visual</label>
+	<label xml:lang="ru">Визуальное</label>
+	<comment xml:lang="ru">Описание нотации (скобки, запятые и т.д.)</comment>
+	<comment xml:lang="en">Notation description (brackets, commas etc.)</comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#ddd660bf9e63419aa13536da3f09172719">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#ddd660bf9e63419aa13536da3f09172718"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="en">Comma</label>
+	<label xml:lang="symbol">,</label>
+	<label xml:lang="ru">Запятая</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#ddd660bf9e63419aa13536da3f09172720">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#ddd660bf9e63419aa13536da3f09172718"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="en">Brackets</label>
+	<label xml:lang="ru">Скобки</label>
+	<label xml:lang="symbol">( )</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#ddd660bf9e63419aa13536da3f09172721">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="ru">Преобразования</label>
+	<label xml:lang="en">Transformations</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#ddd660bf9e63419aa13536da3f09172723">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#ddd660bf9e63419aa13536da3f09172721"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="en">Beginning of solution</label>
+	<label xml:lang="ru">Зачин решения</label>
+	<comment xml:lang="ru">Штуки типа "Возьмём..." "Пусть"</comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#ddd660bf9e63419aa13536da3f09172724">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#ddd660bf9e63419aa13536da3f09172721"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="ru">Вынести</label>
+	<label xml:lang="en">Extract</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#ddd660bf9e63419aa13536da3f09172725">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#ddd660bf9e63419aa13536da3f09172721"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="en">Cancel out</label>
+	<label xml:lang="ru">Сократить</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#ddd660bf9e63419aa13536da3f09172729">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="en">Aggregating Function</label>
+	<label xml:lang="ru">Агреггирующая функция</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#ddd660bf9e63419aa13536da3f09172731">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#ddd660bf9e63419aa13536da3f09172729"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="en">Average</label>
+	<label xml:lang="ru">Среднее</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#ddd660bf9e63419aa13536da3f09172732">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#ddd660bf9e63419aa13536da3f09172731"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="en">Arithmetic mean</label>
+	<label xml:lang="ru">Среднее арифметическое</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#ddd660bf9e63419aa13536da3f09172733">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#ddd660bf9e63419aa13536da3f09172731"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="en">Geometric mean</label>
+	<label xml:lang="ru">Среднее геометрическое</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#ddd660bf9e63419aa13536da3f09172734">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#ddd660bf9e63419aa13536da3f09172731"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="en">Median</label>
+	<label xml:lang="ru">Медиана</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#9e7c5a4ce7a243ca8897ac2d59c6032743">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#ddd660bf9e63419aa13536da3f09172718"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="en">Index</label>
+	<label xml:lang="ru">Индекс</label>
+	<comment xml:lang="en">Written on the lower baseline</comment>
+	<comment xml:lang="ru">Пишется на нижней базовой линии</comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#90ce4be02d494f78b24a4cf2290fd1f453">
+	<rdf:type rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#a7357b05d4f14e2cad12d6491fd6616b50"/>
+	<label xml:lang="ru">Дробь</label>
+	<label xml:lang="en">Fraction</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#90ce4be02d494f78b24a4cf2290fd1f455">
+	<rdf:type rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#d702d18d637a40d38957eefcefba86ac67"/>
+	<label xml:lang="en">Infinity</label>
+	<label xml:lang="symbol">∞</label>
+	<label xml:lang="ru">Бесконечность</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#90ce4be02d494f78b24a4cf2290fd1f456">
+	<rdf:type rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#d702d18d637a40d38957eefcefba86ac67"/>
+	<label xml:lang="en">Pi</label>
+	<label xml:lang="symbol">π</label>
+	<label xml:lang="ru">Пи</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#90ce4be02d494f78b24a4cf2290fd1f457">
+	<rdf:type rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#d702d18d637a40d38957eefcefba86ac67"/>
+	<label xml:lang="en">Euler's number</label>
+	<label xml:lang="symbol">e</label>
+	<label xml:lang="ru">Число Эйлера</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#08daba7ec97f44f58065397fbcbf525353">
+	<rdf:type rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#d702d18d637a40d38957eefcefba86ac70"/>
+	<label xml:lang="ru">Квадрат (степень)</label>
+	<comment xml:lang="ru">Только для степени, "квадрат", "квадратный"</comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#08daba7ec97f44f58065397fbcbf525357">
+	<rdf:type rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#d702d18d637a40d38957eefcefba86ac70"/>
+	<label xml:lang="ru">Куб (степень)</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#08daba7ec97f44f58065397fbcbf525358">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#c9cebc7d0ef346e8a18c41652d65bd9275"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="ru">Числитель</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#c9cebc7d0ef346e8a18c41652d65bd9275">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="ru">Аргументы и результаты (лексика)</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#08daba7ec97f44f58065397fbcbf525359">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#c9cebc7d0ef346e8a18c41652d65bd9275"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="ru">Знаменатель</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#544b587681ae40819705c75e0b080cdf53">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#a7357b05d4f14e2cad12d6491fd6616b46"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="ru">Предел</label>
+	<label xml:lang="en">Limit</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#9c544f66497344d7bac85b4a6a1ad51653">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="ru">Формулы</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#9c544f66497344d7bac85b4a6a1ad51654">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#9c544f66497344d7bac85b4a6a1ad51653"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="ru">Выражение</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#9c544f66497344d7bac85b4a6a1ad51656">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#9c544f66497344d7bac85b4a6a1ad51653"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="ru">Уравнение</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#9c544f66497344d7bac85b4a6a1ad51657">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#9c544f66497344d7bac85b4a6a1ad51653"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="ru">Равенство</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#9c544f66497344d7bac85b4a6a1ad51658">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#9c544f66497344d7bac85b4a6a1ad51657"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="ru">Неравенство</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#9c544f66497344d7bac85b4a6a1ad51659">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#9c544f66497344d7bac85b4a6a1ad51653"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="ru">Многочлен</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#20d05471972f4ffa8b7a4e828cf0852653">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="ru">Формула</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#20d05471972f4ffa8b7a4e828cf0852654">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="ru">Преобразования</label>
+	<label xml:lang="en">Transformations</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#fdd7afcc821647cc8a0fcf6916f0155353">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#ddd660bf9e63419aa13536da3f09172718"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="ru">Минус</label>
+	<label xml:lang="en">Minus sign</label>
+	<label xml:lang="symbol">-</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#fdd7afcc821647cc8a0fcf6916f0155355">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#ddd660bf9e63419aa13536da3f09172718"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="ru">Плюс</label>
+	<label xml:lang="en">Plus sign</label>
+	<label xml:lang="symbol">+</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#e9312d08980f4baa9400f1e1c0291a2471">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#d702d18d637a40d38957eefcefba86ac70"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="ru">Число с дробью (рациональное)</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#e9312d08980f4baa9400f1e1c0291a2472">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#e9312d08980f4baa9400f1e1c0291a2471"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="ru">Число с простой дробью</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#e9312d08980f4baa9400f1e1c0291a2473">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#e9312d08980f4baa9400f1e1c0291a2471"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="ru">Число с десятичной дробью</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#e9312d08980f4baa9400f1e1c0291a2478">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#d702d18d637a40d38957eefcefba86ac70"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="ru">Целое число</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#c9cebc7d0ef346e8a18c41652d65bd9271">
+	<rdf:type rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#d702d18d637a40d38957eefcefba86ac70"/>
+	<label xml:lang="ru">Квадрат (корень)</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#c9cebc7d0ef346e8a18c41652d65bd9272">
+	<rdf:type rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#d702d18d637a40d38957eefcefba86ac70"/>
+	<label xml:lang="ru">Куб (корень)</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#c9cebc7d0ef346e8a18c41652d65bd9273">
+	<rdf:type rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#d702d18d637a40d38957eefcefba86ac70"/>
+	<label xml:lang="ru">Квадрат (уравнение)</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#c9cebc7d0ef346e8a18c41652d65bd9274">
+	<rdf:type rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#d702d18d637a40d38957eefcefba86ac70"/>
+	<label xml:lang="ru">Куб (уравнение)</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#c9cebc7d0ef346e8a18c41652d65bd9276">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#c9cebc7d0ef346e8a18c41652d65bd9275"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="ru">Множитель</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#c9cebc7d0ef346e8a18c41652d65bd9277">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#c9cebc7d0ef346e8a18c41652d65bd9275"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="ru">Произведение</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#c9cebc7d0ef346e8a18c41652d65bd9279">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#c9cebc7d0ef346e8a18c41652d65bd9275"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="ru">Слагаемое</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#c9cebc7d0ef346e8a18c41652d65bd9280">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#c9cebc7d0ef346e8a18c41652d65bd9275"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="ru">Сумма</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#c9cebc7d0ef346e8a18c41652d65bd9281">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#c9cebc7d0ef346e8a18c41652d65bd9275"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="ru">Уменьшаемое</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#c9cebc7d0ef346e8a18c41652d65bd9284">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#c9cebc7d0ef346e8a18c41652d65bd9275"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="ru">Вычитаемое</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#c9cebc7d0ef346e8a18c41652d65bd9285">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#c9cebc7d0ef346e8a18c41652d65bd9275"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="ru">Разность</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#c9cebc7d0ef346e8a18c41652d65bd9287">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#c9cebc7d0ef346e8a18c41652d65bd9275"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="ru">Делимое</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#c9cebc7d0ef346e8a18c41652d65bd9288">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#c9cebc7d0ef346e8a18c41652d65bd9275"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="ru">Делитель</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#c9cebc7d0ef346e8a18c41652d65bd9289">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#c9cebc7d0ef346e8a18c41652d65bd9275"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="ru">Частное</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#c9cebc7d0ef346e8a18c41652d65bd9290">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#d702d18d637a40d38957eefcefba86ac70"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="ru">Коэффициент</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#c9cebc7d0ef346e8a18c41652d65bd9291">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#c9cebc7d0ef346e8a18c41652d65bd9275"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="ru">Решение уравнения</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#95b051b0cac145c2a619143bb347cb2d92">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#a7357b05d4f14e2cad12d6491fd6616b46"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="ru">Унарный минус</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#95b051b0cac145c2a619143bb347cb2d97">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#d702d18d637a40d38957eefcefba86ac70"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="ru">Иррациональное число</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#8dee7ce5a3db457ea7f806cb5c19b04c38">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#a7357b05d4f14e2cad12d6491fd6616b46"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="ru">Логарифм</label>
+	<label xml:lang="en">Logarithm</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#8dee7ce5a3db457ea7f806cb5c19b04c39">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#c9cebc7d0ef346e8a18c41652d65bd9275"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="ru">Основание (логарифм)</label>
+	<label xml:lang="en">Base (logarithm)</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#8dee7ce5a3db457ea7f806cb5c19b04c41">
+	<label xml:lang="ru">Неопределённый интеграл</label>
+	<label xml:lang="en">Antiderivative</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#8dee7ce5a3db457ea7f806cb5c19b04c42">
+	<rdf:type rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#a7357b05d4f14e2cad12d6491fd6616b50"/>
+	<label xml:lang="ru">Пополам</label>
+	<label xml:lang="en">Divide by two</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#8dee7ce5a3db457ea7f806cb5c19b04c43">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="ru">Описание функции</label>
+	<label xml:lang="en">Function mapping</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#8dee7ce5a3db457ea7f806cb5c19b04c44">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#8dee7ce5a3db457ea7f806cb5c19b04c43"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="ru">Область определения функции</label>
+	<label xml:lang="en">Domain (function)</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#8dee7ce5a3db457ea7f806cb5c19b04c45">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#8dee7ce5a3db457ea7f806cb5c19b04c43"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="ru">Область значений функции</label>
+	<label xml:lang="en">Range (function)</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#8dee7ce5a3db457ea7f806cb5c19b04c55">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#d702d18d637a40d38957eefcefba86ac87"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="ru">Примерно равно</label>
+	<label xml:lang="en">Approximately equal to</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#8dee7ce5a3db457ea7f806cb5c19b04c56">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#a7357b05d4f14e2cad12d6491fd6616b39"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="ru">Теория вероятностей</label>
+	<label xml:lang="en">Probability theory</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#8dee7ce5a3db457ea7f806cb5c19b04c57">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#8dee7ce5a3db457ea7f806cb5c19b04c56"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="ru">Дисперсия случайной величины</label>
+	<label xml:lang="en">Variance</label>
+	<comment xml:lang="en">Var(X)</comment>
+	<comment xml:lang="ru">D(X)</comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#8dee7ce5a3db457ea7f806cb5c19b04c58">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#8dee7ce5a3db457ea7f806cb5c19b04c56"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="ru">Математическое ожидание</label>
+	<label xml:lang="en">Expected value</label>
+	<comment xml:lang="en">E(X)</comment>
+	<comment xml:lang="ru">M(X)</comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#8dee7ce5a3db457ea7f806cb5c19b04c59">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#8dee7ce5a3db457ea7f806cb5c19b04c56"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="ru">Среднеквадратическое отклонение</label>
+	<label xml:lang="en">Standard deviation</label>
+	<comment xml:lang="en">σ</comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#8dee7ce5a3db457ea7f806cb5c19b04c60">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#a7357b05d4f14e2cad12d6491fd6616b39"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="ru">Теория чисел</label>
+	<label xml:lang="en">Number theory</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#8dee7ce5a3db457ea7f806cb5c19b04c61">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#8dee7ce5a3db457ea7f806cb5c19b04c60"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="ru">Наибольший общий делитель</label>
+	<label xml:lang="en">Greatest common divisor</label>
+	<comment xml:lang="ru">НОД(x, y)</comment>
+	<comment xml:lang="en">gcd(x, y)</comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#8dee7ce5a3db457ea7f806cb5c19b04c62">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#8dee7ce5a3db457ea7f806cb5c19b04c60"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="ru">Наименьшее общее кратное</label>
+	<label xml:lang="en">Least common multiple</label>
+	<comment xml:lang="ru">НОК(x, y)</comment>
+	<comment xml:lang="en">lcm(x, y)</comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#6c504603dc60499cac70f1895698d65041">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#8dee7ce5a3db457ea7f806cb5c19b04c56"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="ru">Случайная величина</label>
+	<label xml:lang="en">Random variable</label>
+	<label xml:lang="symbol">ξ</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#f44c7bd899924c689bcc54588c4f274e41">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#a7357b05d4f14e2cad12d6491fd6616b46"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="ru">Унарный плюс</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#f44c7bd899924c689bcc54588c4f274e42">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#a7357b05d4f14e2cad12d6491fd6616b39"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="ru">Последовательность</label>
+	<label xml:lang="en">Sequence</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#f44c7bd899924c689bcc54588c4f274e43">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#ddd660bf9e63419aa13536da3f09172718"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="ru">Цифра</label>
+	<label xml:lang="en">Digit</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#f44c7bd899924c689bcc54588c4f274e44">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#a7357b05d4f14e2cad12d6491fd6616b39"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="en">Antiderivative</label>
+	<label xml:lang="ru">Первообразная</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#f44c7bd899924c689bcc54588c4f274e46">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#8dee7ce5a3db457ea7f806cb5c19b04c56"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="ru">Распределение вероятностей</label>
+	<label xml:lang="en">Probability distribution</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#f44c7bd899924c689bcc54588c4f274e47">
+	<rdf:type rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#f44c7bd899924c689bcc54588c4f274e46"/>
+	<label xml:lang="ru">Распределение Пуассона</label>
+	<label xml:lang="en">Poisson distribution</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#f44c7bd899924c689bcc54588c4f274e48">
+	<rdf:type rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#f44c7bd899924c689bcc54588c4f274e46"/>
+	<label xml:lang="ru">Биномиальное распределение</label>
+	<label xml:lang="en">Binomial distribution</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#f44c7bd899924c689bcc54588c4f274e49">
+	<rdf:type rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#f44c7bd899924c689bcc54588c4f274e46"/>
+	<label xml:lang="ru">Нормальное распределение</label>
+	<label xml:lang="en">Normal distribution</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#f44c7bd899924c689bcc54588c4f274e50">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#d702d18d637a40d38957eefcefba86ac91"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="ru">Кванторы</label>
+	<label xml:lang="en">Quantifiers</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#f44c7bd899924c689bcc54588c4f274e51">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#f44c7bd899924c689bcc54588c4f274e50"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="ru">Квантор всеобщности</label>
+	<label xml:lang="en">Universal quantification</label>
+	<label xml:lang="symbol">∀</label>
+	<comment xml:lang="ru">Для любого, для каждого, для всех; каждый, любой, все...</comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#f44c7bd899924c689bcc54588c4f274e52">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#f44c7bd899924c689bcc54588c4f274e50"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="ru">Квантор существования</label>
+	<label xml:lang="en">Existential quantification</label>
+	<label xml:lang="symbol">∃</label>
+	<comment xml:lang="ru">Существует, найдётся...</comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#f44c7bd899924c689bcc54588c4f274e53">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#f44c7bd899924c689bcc54588c4f274e50"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="ru">Квантор единственности</label>
+	<label xml:lang="en">Uniqueness quantification</label>
+	<label xml:lang="symbol">∃!</label>
+	<comment xml:lang="ru">Существует единственный; является единственным...</comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#f44c7bd899924c689bcc54588c4f274e54">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#d702d18d637a40d38957eefcefba86ac91"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="ru">Логические операции</label>
+	<label xml:lang="en">Logical connectives</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#f44c7bd899924c689bcc54588c4f274e55">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#f44c7bd899924c689bcc54588c4f274e54"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="ru">Конъюнкция</label>
+	<label xml:lang="en">Logical conjunction</label>
+	<label xml:lang="symbol">∧</label>
+	<comment xml:lang="ru">Логическое "и"</comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#f44c7bd899924c689bcc54588c4f274e56">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#f44c7bd899924c689bcc54588c4f274e54"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="ru">Дизъюнкция</label>
+	<label xml:lang="en">Logical disjunction</label>
+	<label xml:lang="symbol">∨</label>
+	<comment xml:lang="ru">Логическое "или"</comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#f44c7bd899924c689bcc54588c4f274e57">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#f44c7bd899924c689bcc54588c4f274e54"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="ru">Импликация</label>
+	<label xml:lang="en">Material implication</label>
+	<label xml:lang="symbol">→</label>
+	<comment xml:lang="ru">Если..., то; тогда...</comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#f44c7bd899924c689bcc54588c4f274e58">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#f44c7bd899924c689bcc54588c4f274e54"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="ru">Эквиваленция</label>
+	<label xml:lang="symbol">↔</label>
+	<label xml:lang="en">Logical equality</label>
+	<comment xml:lang="ru">Тогда и только тогда когда...</comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#f44c7bd899924c689bcc54588c4f274e59">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#f44c7bd899924c689bcc54588c4f274e54"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="ru">Отрицание</label>
+	<label xml:lang="en">Negation</label>
+	<label xml:lang="symbol">¬</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#f44c7bd899924c689bcc54588c4f274e60">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#c9cebc7d0ef346e8a18c41652d65bd9275"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="ru">Степень (выражение)</label>
+	<comment xml:lang="ru">Для референции к выражениям вроде (x+y)^n</comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#f44c7bd899924c689bcc54588c4f274e61">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#ddd660bf9e63419aa13536da3f09172714"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="en">Not divisible by</label>
+	<label xml:lang="ru">Не делится на</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#f44c7bd899924c689bcc54588c4f274e62">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#8dee7ce5a3db457ea7f806cb5c19b04c43"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="ru">Монотонность</label>
+	<label xml:lang="en">Monotonicity</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#f44c7bd899924c689bcc54588c4f274e63">
+	<rdf:type rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#f44c7bd899924c689bcc54588c4f274e62"/>
+	<label xml:lang="ru">Убывает</label>
+	<label xml:lang="en">Monotonically decreasing</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#f44c7bd899924c689bcc54588c4f274e64">
+	<rdf:type rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#f44c7bd899924c689bcc54588c4f274e62"/>
+	<label xml:lang="ru">Возрастает</label>
+	<label xml:lang="en">Monotonically increasing</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#f44c7bd899924c689bcc54588c4f274e65">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#8dee7ce5a3db457ea7f806cb5c19b04c43"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="en">Continuous function</label>
+	<label xml:lang="ru">Непрерывность (функция)</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#f44c7bd899924c689bcc54588c4f274e66">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#8dee7ce5a3db457ea7f806cb5c19b04c43"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="en">Discontinuous function</label>
+	<label xml:lang="ru">С разрывами (функция)</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#f44c7bd899924c689bcc54588c4f274e67">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#8dee7ce5a3db457ea7f806cb5c19b04c43"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="ru">Разрыв</label>
+	<label xml:lang="en">Discontinuity</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#f44c7bd899924c689bcc54588c4f274e77">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#d702d18d637a40d38957eefcefba86ac36"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="ru">Множество</label>
+	<label xml:lang="en">Set</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#f44c7bd899924c689bcc54588c4f274e78">
+	<rdf:type rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#544b587681ae40819705c75e0b080cdf53"/>
+	<label xml:lang="ru">Левый предел</label>
+	<label xml:lang="en">Left limit</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#f44c7bd899924c689bcc54588c4f274e79">
+	<rdf:type rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#544b587681ae40819705c75e0b080cdf53"/>
+	<label xml:lang="ru">Правый предел</label>
+	<label xml:lang="en">Right limit</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#f44c7bd899924c689bcc54588c4f274e80">
+	<rdf:type rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#f44c7bd899924c689bcc54588c4f274e77"/>
+	<label xml:lang="ru">Множество рациональных чисел</label>
+	<label xml:lang="en">Field of rationals</label>
+	<label xml:lang="symbol">Q</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#f44c7bd899924c689bcc54588c4f274e81">
+	<rdf:type rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#f44c7bd899924c689bcc54588c4f274e77"/>
+	<label xml:lang="ru">Множество натуральных чисел</label>
+	<label xml:lang="en">Natural numbers</label>
+	<label xml:lang="symbol">N</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#f44c7bd899924c689bcc54588c4f274e82">
+	<rdf:type rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#f44c7bd899924c689bcc54588c4f274e77"/>
+	<label xml:lang="ru">Множество целых чисел</label>
+	<label xml:lang="en">Integers</label>
+	<label xml:lang="symbol">Z</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#f44c7bd899924c689bcc54588c4f274e83">
+	<rdf:type rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#f44c7bd899924c689bcc54588c4f274e77"/>
+	<label xml:lang="en">Real numbers</label>
+	<label xml:lang="symbol">R</label>
+	<label xml:lang="ru">Множество вещественных (действительных) чисел</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#f44c7bd899924c689bcc54588c4f274e84">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#a7357b05d4f14e2cad12d6491fd6616b39"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="ru">Комбинаторика</label>
+	<label xml:lang="en">Combinatorics</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#f44c7bd899924c689bcc54588c4f274e85">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#f44c7bd899924c689bcc54588c4f274e84"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="en">Permutation</label>
+	<label xml:lang="ru">Перестановка (комбинаторика)</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#f44c7bd899924c689bcc54588c4f274e86">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#f44c7bd899924c689bcc54588c4f274e84"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="ru">Размещение (комбинаторика)</label>
+	<label xml:lang="en">Partial permutation</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#f44c7bd899924c689bcc54588c4f274e87">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#f44c7bd899924c689bcc54588c4f274e84"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="ru">Сочетание (комбинаторика)</label>
+	<label xml:lang="en">Combination</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#f44c7bd899924c689bcc54588c4f274e89">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#a7357b05d4f14e2cad12d6491fd6616b39"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="ru">Интеграл</label>
+	<label xml:lang="en">Integral</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#6c9df02ee6484c68966a7668f066c06e47">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#d702d18d637a40d38957eefcefba86ac36"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="ru">Событие</label>
+	<label xml:lang="en">Event</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#6c9df02ee6484c68966a7668f066c06e48">
+	<rdf:type rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#f44c7bd899924c689bcc54588c4f274e89"/>
+	<label xml:lang="ru">Определённый интеграл</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#6c9df02ee6484c68966a7668f066c06e49">
+	<rdf:type rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#f44c7bd899924c689bcc54588c4f274e89"/>
+	<label xml:lang="ru">Неопределённый интеграл</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#398a1f8648ca4439b8c1a247496022c341">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#ddd660bf9e63419aa13536da3f09172718"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="symbol">=</label>
+	<label xml:lang="ru">Знак равенства</label>
+	<label xml:lang="en">Equals sign</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#8dad7bb8231542c3941c25cbd0947c8941">
+	<rdf:type rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#20d05471972f4ffa8b7a4e828cf0852653"/>
+	<label xml:lang="ru">Дискриминант</label>
+	<label xml:lang="en">Discriminant</label>
+	<label xml:lang="symbol">D</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#8dad7bb8231542c3941c25cbd0947c8942">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#ddd660bf9e63419aa13536da3f09172718"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="symbol">≠</label>
+	<label xml:lang="ru">Знак неравенства</label>
+	<label xml:lang="en">Not equal to sign</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#8dad7bb8231542c3941c25cbd0947c8943">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#ddd660bf9e63419aa13536da3f09172711"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="ru">Принадлежит</label>
+	<label xml:lang="en">Element of set</label>
+	<label xml:lang="symbol">∈</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#b207780814dc44f6b140a79c69bef64f41">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#c9cebc7d0ef346e8a18c41652d65bd9275"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="ru">Основание (степень)</label>
+	<label xml:lang="en">Base (exponentiation)</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#b207780814dc44f6b140a79c69bef64f42">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#c9cebc7d0ef346e8a18c41652d65bd9275"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="ru">Значение функции</label>
+	<label xml:lang="en">Value of function</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#21affaf0c2f241199cc96da93089df2c41">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#8dee7ce5a3db457ea7f806cb5c19b04c56"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="ru">Корреляция</label>
+	<label xml:lang="en">Correlation</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#21affaf0c2f241199cc96da93089df2c42">
+	<rdf:type rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#21affaf0c2f241199cc96da93089df2c41"/>
+	<label xml:lang="ru">Ковариация</label>
+	<label xml:lang="en">Covariance</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#21affaf0c2f241199cc96da93089df2c43">
+	<rdf:type rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#21affaf0c2f241199cc96da93089df2c41"/>
+	<label xml:lang="symbol">R</label>
+	<label xml:lang="ru">Коэффициент корреляции Пирсона</label>
+	<label xml:lang="en">Pearson product-moment correlation coefficient</label>
+	<label xml:lang="symbol">r</label>
+	<label xml:lang="symbol">ρ</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#21affaf0c2f241199cc96da93089df2c44">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#8dee7ce5a3db457ea7f806cb5c19b04c43"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="ru">Размерность функции</label>
+	<label xml:lang="en">Dimensionality of function</label>
+	<comment rdf:resource="https://wikisocion.github.io/content/dimensionality.html"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#21affaf0c2f241199cc96da93089df2c45">
+	<rdf:type rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#21affaf0c2f241199cc96da93089df2c44"/>
+	<label xml:lang="ru">Двумерная (функция)</label>
+	<label xml:lang="en">2-dimensional</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#21affaf0c2f241199cc96da93089df2c46">
+	<rdf:type rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#21affaf0c2f241199cc96da93089df2c44"/>
+	<label xml:lang="ru">Трёхмерная (функция)</label>
+	<label xml:lang="en">3-dimensional</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#21affaf0c2f241199cc96da93089df2c47">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#8dee7ce5a3db457ea7f806cb5c19b04c56"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="ru">Вероятность</label>
+	<label xml:lang="en">Probability</label>
+	<label xml:lang="symbol">P</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#21affaf0c2f241199cc96da93089df2c48">
+	<rdf:type rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#f44c7bd899924c689bcc54588c4f274e60"/>
+	<label xml:lang="ru">Квадрат (выражение)</label>
+	<comment>Для референции к выражениям вроде (x+y)^2</comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#21affaf0c2f241199cc96da93089df2c49">
+	<rdf:type rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#f44c7bd899924c689bcc54588c4f274e60"/>
+	<label xml:lang="ru">Куб (выражение)</label>
+	<comment>Для референции к выражениям вроде (x+y)^3</comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#21affaf0c2f241199cc96da93089df2c50">
+	<rdf:type rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#f44c7bd899924c689bcc54588c4f274e77"/>
+	<label xml:lang="ru">Множество иррациональных чисел</label>
+	<label xml:lang="en">Irrational numbers</label>
+	<label xml:lang="symbol">I</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#21affaf0c2f241199cc96da93089df2c51">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#e9312d08980f4baa9400f1e1c0291a2471"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="ru">Периодическая дробь</label>
+	<label xml:lang="en">Repeating decimal</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#21affaf0c2f241199cc96da93089df2c52">
+	<rdf:type rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#f44c7bd899924c689bcc54588c4f274e77"/>
+	<label xml:lang="ru">Множество комплексных чисел</label>
+	<label xml:lang="en">Complex numbers</label>
+	<label xml:lang="symbol">C</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#044ef4936fbf48bea51a875ab0e33ea541">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#ddd660bf9e63419aa13536da3f09172711"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="ru">Промежутки</label>
+	<label xml:lang="en">Intervals</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#044ef4936fbf48bea51a875ab0e33ea542">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#044ef4936fbf48bea51a875ab0e33ea541"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="ru">Числовой отрезок</label>
+	<label xml:lang="en">Closed interval</label>
+	<label xml:lang="symbol">[a,b]</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#044ef4936fbf48bea51a875ab0e33ea543">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#044ef4936fbf48bea51a875ab0e33ea541"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="ru">Интервал</label>
+	<label xml:lang="en">Open interval</label>
+	<label xml:lang="symbol">(a,b)</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#044ef4936fbf48bea51a875ab0e33ea544">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#044ef4936fbf48bea51a875ab0e33ea541"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="ru">Полуинтервал</label>
+	<label xml:lang="en">Half-open interval</label>
+	<label xml:lang="symbol">[a,b) (a,b]</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#044ef4936fbf48bea51a875ab0e33ea545">
+	<rdf:type rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#044ef4936fbf48bea51a875ab0e33ea544"/>
+	<label xml:lang="ru">Луч</label>
+	<label xml:lang="en">Half-line</label>
+	<label xml:lang="symbol">(-∞, a] &#xD;
+[a, +∞)&#xD;
+(-∞, a)&#xD;
+(a, +∞)</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#044ef4936fbf48bea51a875ab0e33ea546">
+	<rdf:type rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#044ef4936fbf48bea51a875ab0e33ea543"/>
+	<label xml:lang="ru">Числовая прямая</label>
+	<label xml:lang="en">Number line</label>
+	<label xml:lang="symbol">(-∞, +∞)</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#044ef4936fbf48bea51a875ab0e33ea550">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#20d05471972f4ffa8b7a4e828cf0852654"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="en">Operand transfer</label>
+	<label xml:lang="ru">Перенос_old</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#044ef4936fbf48bea51a875ab0e33ea551">
+	<rdf:type rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#8dee7ce5a3db457ea7f806cb5c19b04c44"/>
+	<label xml:lang="ru">Нуль функции</label>
+	<label xml:lang="en">Root of function</label>
+	<label xml:lang="symbol">f(x)=0</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#044ef4936fbf48bea51a875ab0e33ea552">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="ru">Кривая</label>
+	<label xml:lang="en">Plane curve</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#044ef4936fbf48bea51a875ab0e33ea553">
+	<rdf:type rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#044ef4936fbf48bea51a875ab0e33ea552"/>
+	<label xml:lang="ru">Парабола</label>
+	<label xml:lang="en">Parabola</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#044ef4936fbf48bea51a875ab0e33ea554">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#27ed2750726f4dfebb9ce3e5540057bc31"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="ru">Ось</label>
+	<label xml:lang="en">Axis</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#044ef4936fbf48bea51a875ab0e33ea555">
+	<rdf:type rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#044ef4936fbf48bea51a875ab0e33ea554"/>
+	<label xml:lang="ru">Ось абсцисс (OX)</label>
+	<label xml:lang="en">X-axis</label>
+	<label xml:lang="symbol">OX</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#044ef4936fbf48bea51a875ab0e33ea556">
+	<rdf:type rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#044ef4936fbf48bea51a875ab0e33ea554"/>
+	<label xml:lang="ru">Ось ординат (OY)</label>
+	<label xml:lang="en">Y-axis</label>
+	<label xml:lang="symbol">OY</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#044ef4936fbf48bea51a875ab0e33ea557">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#ddd660bf9e63419aa13536da3f09172721"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="en">Operand transfer</label>
+	<label xml:lang="ru">Перенос</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#044ef4936fbf48bea51a875ab0e33ea558">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#ddd660bf9e63419aa13536da3f09172721"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="ru">Приведение подобных</label>
+	<label xml:lang="en">Reduction</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#044ef4936fbf48bea51a875ab0e33ea559">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#8dee7ce5a3db457ea7f806cb5c19b04c56"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="ru">Случайный эксперимент</label>
+	<label xml:lang="en">Trial</label>
+	<label xml:lang="symbol">(S, F, P)</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#27ed2750726f4dfebb9ce3e5540057bc29">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#d702d18d637a40d38957eefcefba86ac70"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="ru">Положительное число</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#27ed2750726f4dfebb9ce3e5540057bc30">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#d702d18d637a40d38957eefcefba86ac70"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="ru">Отрицательное число</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#27ed2750726f4dfebb9ce3e5540057bc31">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="ru">График_класс</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#27ed2750726f4dfebb9ce3e5540057bc32">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#27ed2750726f4dfebb9ce3e5540057bc31"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="ru">Виды графиков</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#27ed2750726f4dfebb9ce3e5540057bc33">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#27ed2750726f4dfebb9ce3e5540057bc32"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="ru">Парабола</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#27ed2750726f4dfebb9ce3e5540057bc34">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#27ed2750726f4dfebb9ce3e5540057bc32"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="ru">Гипербола</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#27ed2750726f4dfebb9ce3e5540057bc37">
+	<label xml:lang="ru">Возрастание</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#27ed2750726f4dfebb9ce3e5540057bc39">
+	<label xml:lang="ru">Убывание</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#27ed2750726f4dfebb9ce3e5540057bc40">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#27ed2750726f4dfebb9ce3e5540057bc31"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="ru">Точка</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#27ed2750726f4dfebb9ce3e5540057bc41">
+	<rdf:type rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#27ed2750726f4dfebb9ce3e5540057bc40"/>
+	<label xml:lang="ru">Выколотая точка</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#27ed2750726f4dfebb9ce3e5540057bc42">
+	<rdf:type rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#27ed2750726f4dfebb9ce3e5540057bc40"/>
+	<label xml:lang="ru">Невыколотая точка</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#27ed2750726f4dfebb9ce3e5540057bc43">
+	<subClassOf rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#27ed2750726f4dfebb9ce3e5540057bc31"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<label xml:lang="ru">Вершина графика</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#27ed2750726f4dfebb9ce3e5540057bc44">
+	<rdf:type rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#27ed2750726f4dfebb9ce3e5540057bc34"/>
+	<label xml:lang="ru">Ветви вверх</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#27ed2750726f4dfebb9ce3e5540057bc45">
+	<rdf:type rdf:resource="http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#27ed2750726f4dfebb9ce3e5540057bc34"/>
+	<label xml:lang="ru">Ветви вниз</label>
+</rdf:Description>
+
+</rdf:RDF>

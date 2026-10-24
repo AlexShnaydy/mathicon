@@ -1,0 +1,15 @@
+{% extends "admin/base_site.html" %}
+{% block breadcrumbs %}<div class="breadcrumbs">
+  <a href="{% url 'admin:index' %}">Главная</a> &rsaquo;
+  <a href="{% url 'admin:corpus_text_changelist' %}">Тексты</a> &rsaquo; Загрузка XMI</div>{% endblock %}
+{% block content %}
+<form method="post" enctype="multipart/form-data">{% csrf_token %}
+  <p>Выберите один или несколько файлов XMI, выгруженных из INCEpTION.
+     Онтология тегов (math.rdf) должна быть загружена заранее.</p>
+  <p><input type="file" name="files" multiple accept=".xmi,.xml" required></p>
+  <p><label>Название (только если файл один; иначе берётся из файла):<br>
+     <input type="text" name="title" size="60"></label></p>
+  <p><label><input type="checkbox" name="replace"> Заменить, если этот документ уже загружен</label></p>
+  <p><input type="submit" value="Загрузить" class="default"></p>
+</form>
+{% endblock %}

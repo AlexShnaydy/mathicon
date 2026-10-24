@@ -1,0 +1,18 @@
+{% extends "corpus/base.html" %}
+{% block content %}
+<form method="get">
+ <label>Математический тег
+  <select name="tag"><option value="">— любой —</option>
+  {% for n in nodes %}<option value="{{ n.tag.pk }}" {% if n.tag.pk|stringformat:"s" == tag_id %}selected{% endif %}>{{ n.indent }}{{ n.tag }} ({{ n.total }})</option>{% endfor %}
+  </select></label>
+ <label>Лемма<input name="lemma" value="{{ lemma }}" placeholder="например, свойство"></label>
+ <label>Часть речи<input name="pos" value="{{ pos }}" size="6" placeholder="NOUN"></label>
+ <button>Найти</button>
+</form>
+{% if searched %}
+ <p><b>Найдено: {{ total }}</b>{% if total > shown %} (показано {{ shown }}){% endif %}</p>
+ {% for r in results %}
+  <div class="res">{{ r.html }}<div class="meta">{{ r.note }} · <a href="{% url 'text_detail' r.text.pk %}">{{ r.text.title }}</a></div></div>
+ {% empty %}<p>Ничего не найдено.</p>{% endfor %}
+{% endif %}
+{% endblock %}

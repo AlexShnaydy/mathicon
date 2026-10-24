@@ -1,0 +1,5 @@
+{% extends "admin/change_list.html" %}
+{% block object-tools-items %}
+  <li><a href="{% url 'admin:corpus_text_upload_xmi' %}" class="addlink">Загрузить XMI</a></li>
+  {{ block.super }}
+{% endblock %}

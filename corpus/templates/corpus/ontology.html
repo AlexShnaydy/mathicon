@@ -1,0 +1,94 @@
+{% extends "corpus/base.html" %}
+{% block title %}Онтология{% endblock %}
+{% block content %}
+<style>
+ .tag{padding:.3rem 0;border-bottom:1px solid #f0f0f0}
+ .tag a{margin-left:.6rem;font-size:.85rem}
+ .tag code{margin-left:.5rem;background:#f3f3f3;padding:0 4px;border-radius:3px}
+ .tag .meta{margin-left:.5rem}
+ .tog{display:inline-block;width:1.3em;cursor:pointer;color:#1a55b0;user-select:none}
+ .bar{display:flex;gap:.6rem;margin-bottom:.8rem}.bar input{flex:1}
+</style>
+<h2>Онтология математических тегов</h2>
+<p class="meta">Всего тегов: {{ nodes|length }}.</p>
+<div class="bar">
+ <input id="flt" placeholder="Фильтр по названию…">
+ <button type="button" id="open-all">Раскрыть всё</button>
+ <button type="button" id="close-all">Свернуть всё</button>
+</div>
+<div id="tree">
+{% for n in nodes %}
+ <div class="tag" data-depth="{{ n.depth }}" style="padding-left:{{ n.pad }}px" data-name="{{ n.tag.label_ru|lower }} {{ n.tag.label_en|lower }}">
+  <span class="tog"></span><b>{{ n.tag }}</b>
+  {% if n.tag.label_en and n.tag.label_en != n.tag.label_ru %}<span class="meta">{{ n.tag.label_en }}</span>{% endif %}
+  {% if n.tag.symbol %}<code>{{ n.tag.symbol }}</code>{% endif %}
+  {% if n.is_instance %}<span class="meta">(экземпляр)</span>{% endif %}
+  {% if n.total %}<a href="{% url 'search' %}?tag={{ n.tag.pk }}">в корпусе: {{ n.total }}</a>{% endif %}
+  {% if n.tag.comment_ru %}<div class="meta">{{ n.tag.comment_ru }}</div>{% endif %}
+ </div>
+{% endfor %}
+</div>
+<script>
+(function () {
+  var rows = Array.from(document.querySelectorAll('#tree .tag'));
+  var flt = document.getElementById('flt');
+
+  rows.forEach(function (r, i) {
+    r._depth = +r.dataset.depth;
+    r._open = false;
+    var next = rows[i + 1];
+    r._has = !!next && +next.dataset.depth > r._depth;
+    var tog = r.querySelector('.tog');
+    if (r._has) {
+      tog.textContent = '▸';
+      tog.addEventListener('click', function () {
+        r._open = !r._open;
+        tog.textContent = r._open ? '▾' : '▸';
+        refresh();
+      });
+    }
+  });
+
+  // показываем строку, если открыты все её предки
+  function refresh() {
+    var q = flt.value.trim().toLowerCase();
+    if (q) { return filter(q); }
+    var chain = [];
+    rows.forEach(function (r) {
+      var d = r._depth, p = chain[d - 1];
+      var visible = d === 0 || (p.visible && p.open);
+      chain[d] = { visible: visible, open: r._open };
+      chain.length = d + 1;
+      r.style.display = visible ? '' : 'none';
+    });
+  }
+
+  // при фильтре: совпавшие строки + их родители, чтобы было видно, где они в дереве
+  function filter(q) {
+    var show = rows.map(function () { return false; });
+    rows.forEach(function (r, i) {
+      if (r.dataset.name.indexOf(q) === -1) return;
+      show[i] = true;
+      var cur = r._depth;
+      for (var j = i - 1; j >= 0 && cur > 0; j--) {
+        if (rows[j]._depth < cur) { show[j] = true; cur = rows[j]._depth; }
+      }
+    });
+    rows.forEach(function (r, i) { r.style.display = show[i] ? '' : 'none'; });
+  }
+
+  function setAll(open) {
+    rows.forEach(function (r) {
+      r._open = open && r._has;
+      if (r._has) r.querySelector('.tog').textContent = open ? '▾' : '▸';
+    });
+    refresh();
+  }
+
+  flt.addEventListener('input', refresh);
+  document.getElementById('open-all').addEventListener('click', function () { setAll(true); });
+  document.getElementById('close-all').addEventListener('click', function () { setAll(false); });
+  refresh();
+})();
+</script>
+{% endblock %}

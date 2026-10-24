@@ -1,0 +1,8 @@
+{% extends "corpus/base.html" %}
+{% block content %}
+<h2>Тексты</h2>
+<table><tr><th>Название</th><th>Токенов</th><th>Мат. аннотаций</th></tr>
+{% for t in texts %}<tr><td><a href="{% url 'text_detail' t.pk %}">{{ t.title }}</a></td><td>{{ t.n_tokens }}</td><td>{{ t.n_math }}</td></tr>
+{% empty %}<tr><td colspan="3">Пока пусто. Импортируйте XMI: <code>python manage.py import_xmi файл.xmi</code></td></tr>{% endfor %}
+</table>
+{% endblock %}

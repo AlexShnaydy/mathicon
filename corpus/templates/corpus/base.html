@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block title %}Математикон{% endblock %}</title>
+<style>
+ body{font:16px/1.55 system-ui,sans-serif;max-width:900px;margin:0 auto;padding:1rem;color:#222}
+ nav{display:flex;gap:1.2rem;align-items:baseline;border-bottom:1px solid #ddd;padding-bottom:.6rem;margin-bottom:1rem}
+ nav b{font-size:1.3rem;margin-right:auto} a{color:#1a55b0}
+ form{display:flex;flex-wrap:wrap;gap:.6rem;align-items:end;margin-bottom:1rem}
+ label{display:flex;flex-direction:column;font-size:.8rem;color:#555}
+ select,input,button{font:inherit;padding:.35rem .5rem}
+ mark{background:#ffe27a;padding:0 2px;border-radius:3px}
+ .res{border-bottom:1px solid #eee;padding:.5rem 0}.meta{font-size:.8rem;color:#666}
+ table{border-collapse:collapse;width:100%}td,th{text-align:left;padding:.3rem .5rem;border-bottom:1px solid #eee}
+</style></head>
+<body>
+<nav><b>Математикон</b><a href="{% url 'search' %}">Поиск</a>
+<a href="{% url 'ontology' %}">Онтология</a>
+<a href="{% url 'text_list' %}">Тексты</a><a href="/admin/">Админка</a></nav>
+{% block content %}{% endblock %}
+</body></html>
