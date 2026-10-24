@@ -1,6 +1,6 @@
 # Математикон — прототип БД и сайта
 
-Django + SQLite (по умолчанию) или PostgreSQL.
+Django + SQLite (по умолчанию).
 
 ## Запуск
 ```
@@ -13,9 +13,6 @@ python manage.py createsuperuser
 python manage.py runserver
 ```
 Откройте http://127.0.0.1:8000/ (поиск, список текстов) и /admin/ (интерфейс для хостов).
-
-## PostgreSQL
-Задайте переменные окружения `POSTGRES_DB`, `POSTGRES_USER`, `POSTGRES_PASSWORD`, `POSTGRES_HOST` — и повторите migrate/import.
 
 ## Структура
 - `corpus/parsers/` — разбор XMI и RDF (чистый Python, без Django).
