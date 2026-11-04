@@ -1,15 +1,17 @@
 """Импорт одного документа из XMI (INCEpTION) в базу.
-Используется командой import_xmi и кнопкой «Загрузить XMI» в админке."""
+Используется и командой import_xmi, и кнопкой «Загрузить XMI» в админке."""
 import xml.etree.ElementTree as ET
 
+from django.core.cache import cache
 from django.db import transaction
 
 from .models import MathAnnotation, MathRelation, Sentence, Tag, Text, Token
 from .parsers.xmi import parse_xmi
+from .search import OPTIONS_KEY, lc
 
 
 class ImportProblem(Exception):
-    """Причина, по которой документ не загружен."""
+    """Понятная человеку причина, по которой документ не загружен."""
 
 
 def _default_title(meta, source_name):
@@ -48,10 +50,11 @@ def import_xmi_file(source, title=None, replace=False, source_name=""):
     for i, t in enumerate(d["tokens"]):
         toks.append(Token(text=text, sentence=sents[t["sentence_index"]], index=i,
                           begin=t["begin"], end=t["end"], form=t["form"], lemma=t["lemma"],
+                          form_lower=lc(t["form"]), lemma_lower=lc(t["lemma"]),
                           pos=t["pos"], morph=t["morph"], morph_str=t["morph_str"],
                           dep_rel=t["dep_rel"]))
     Token.objects.bulk_create(toks)
-
+    # перечитываем: так у токенов гарантированно есть id (на любой версии SQLite/БД)
     toks = list(Token.objects.filter(text=text).order_by("index"))
     by_xmi = {t["xmi_id"]: obj for t, obj in zip(d["tokens"], toks)}
     for t, obj in zip(d["tokens"], toks):
@@ -69,7 +72,8 @@ def import_xmi_file(source, title=None, replace=False, source_name=""):
             stubs += 1
         inside = [t for t in toks if t.begin >= m["begin"] and t.end <= m["end"]]
         anns[m["xmi_id"]] = MathAnnotation.objects.create(
-            text=text, begin=m["begin"], end=m["end"], surface=m["surface"], tag=tag,
+            text=text, begin=m["begin"], end=m["end"], surface=m["surface"],
+            surface_lower=lc(m["surface"]), tag=tag,
             name=m["name"], reference=m["reference"],
             first_token=inside[0] if inside else None,
             last_token=inside[-1] if inside else None)
@@ -81,5 +85,6 @@ def import_xmi_file(source, title=None, replace=False, source_name=""):
                     MathRelation.objects.create(source=anns[m["xmi_id"]], target=target,
                                                 kind=kind, role=link["role"])
 
+    cache.delete(OPTIONS_KEY)   # списки в форме поиска обновятся сразу
     return text, dict(sentences=len(sents), tokens=len(toks),
                       annotations=len(anns), stub_tags=stubs)

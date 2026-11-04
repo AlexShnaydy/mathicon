@@ -1,12 +1,14 @@
+from django.core.paginator import Paginator
 from django.db.models import Count
 from django.shortcuts import get_object_or_404, render
 from django.utils.html import escape
 from django.utils.safestring import mark_safe
 
-from .models import MathAnnotation, Tag, Text, Token
+from .models import MathAnnotation, Text
+from .search import Params, run_search, search_options
 from .tagtree import build_tree
 
-MAX_RESULTS = 200
+PAGE_SIZE = 25
 
 
 def highlight(content, offset, spans):
@@ -25,39 +27,42 @@ def highlight(content, offset, spans):
     return mark_safe("".join(out))
 
 
+def _build_results(page, kind):
+    results = []
+    for obj in page.object_list:
+        if kind == "token":
+            s = obj.sentence
+            note = f"{obj.lemma} · {obj.pos}" + (f" · {obj.morph_str}" if obj.morph_str else "")
+            html = highlight(s.content, s.begin, [(obj.begin, obj.end, f"{obj.lemma} · {obj.pos}")])
+            anns = MathAnnotation.objects.filter(
+                text_id=obj.text_id, begin__lte=obj.begin, end__gte=obj.end).select_related("tag")
+            math = [str(a.tag) + (f" = {a.name}" if a.name else "") for a in anns]
+        else:
+            s = obj.first_token.sentence if obj.first_token else None
+            html = (highlight(s.content, s.begin, [(obj.begin, obj.end, str(obj.tag))])
+                    if s else escape(obj.surface))
+            note = ""
+            math = [str(obj.tag) + (f" = {obj.name}" if obj.name else "")]
+        results.append(dict(text=obj.text, html=html, note=note, math=math))
+    return results
+
+
 def search(request):
-    tag_id = request.GET.get("tag") or ""
-    lemma = (request.GET.get("lemma") or "").strip()
-    pos = (request.GET.get("pos") or "").strip().upper()
-    results, total = [], 0
+    p = Params(request.GET)
+    page, kind, results = None, None, []
+    if p.submitted and p.active:
+        qs, kind = run_search(p)
+        page = Paginator(qs, PAGE_SIZE).get_page(request.GET.get("page"))
+        results = _build_results(page, kind)
 
-    if tag_id.isdigit():
-        tag = get_object_or_404(Tag, pk=tag_id)
-        qs = (MathAnnotation.objects.filter(tag_id__in=tag.descendant_ids())
-              .select_related("text", "tag", "first_token__sentence"))
-        total = qs.count()
-        for a in qs[:MAX_RESULTS]:
-            s = a.first_token.sentence if a.first_token else None
-            html = (highlight(s.content, s.begin, [(a.begin, a.end, str(a.tag))])
-                    if s else escape(a.surface))
-            results.append(dict(text=a.text, html=html, note=str(a.tag)))
-    elif lemma or pos:
-        qs = Token.objects.select_related("text", "sentence")
-        if lemma:
-            qs = qs.filter(lemma__iexact=lemma)
-        if pos:
-            qs = qs.filter(pos=pos)
-        total = qs.count()
-        for t in qs[:MAX_RESULTS]:
-            html = highlight(t.sentence.content, t.sentence.begin,
-                             [(t.begin, t.end, f"{t.lemma} · {t.pos}")])
-            results.append(dict(text=t.text, html=html, note=f"{t.lemma} · {t.pos}"))
-
+    opts = search_options()
+    feat_rows = [dict(f, selected=p.feats.get(f["key"], "")) for f in opts["feats"]]
     nodes = [n for n in build_tree() if n["total"] > 0]
+    qs_params = request.GET.copy()
+    qs_params.pop("page", None)
     return render(request, "corpus/search.html", dict(
-        nodes=nodes, results=results, total=total, shown=len(results),
-        tag_id=tag_id, lemma=lemma, pos=pos,
-        searched=bool(tag_id.isdigit() or lemma or pos)))
+        p=p, opts=opts, feat_rows=feat_rows, nodes=nodes,
+        page=page, kind=kind, results=results, qs=qs_params.urlencode()))
 
 
 def text_list(request):
@@ -76,6 +81,7 @@ def text_detail(request, pk):
         sentences.append(highlight(s.content, s.begin, spans))
     return render(request, "corpus/text_detail.html",
                   dict(text=text, sentences=sentences, n_ann=len(anns)))
+
 
 def ontology(request):
     return render(request, "corpus/ontology.html", dict(nodes=build_tree()))

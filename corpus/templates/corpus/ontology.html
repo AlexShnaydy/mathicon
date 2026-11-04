@@ -23,7 +23,7 @@
   {% if n.tag.label_en and n.tag.label_en != n.tag.label_ru %}<span class="meta">{{ n.tag.label_en }}</span>{% endif %}
   {% if n.tag.symbol %}<code>{{ n.tag.symbol }}</code>{% endif %}
   {% if n.is_instance %}<span class="meta">(экземпляр)</span>{% endif %}
-  {% if n.total %}<a href="{% url 'search' %}?tag={{ n.tag.pk }}">в корпусе: {{ n.total }}</a>{% endif %}
+  {% if n.total %}<a href="{% url 'search' %}?go=1&amp;math=1&amp;sub=1&amp;tag={{ n.tag.pk }}">в корпусе: {{ n.total }}</a>{% endif %}
   {% if n.tag.comment_ru %}<div class="meta">{{ n.tag.comment_ru }}</div>{% endif %}
  </div>
 {% endfor %}

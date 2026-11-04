@@ -1,18 +1,87 @@
 {% extends "corpus/base.html" %}
+{% block title %}Поиск{% endblock %}
 {% block content %}
+<style>
+ fieldset{border:1px solid #ddd;border-radius:6px;margin:0 0 1rem;padding:.7rem .9rem}
+ fieldset:disabled{opacity:.45}
+ legend{font-weight:600;padding:0 .4rem}
+ .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:.6rem;width:100%}
+ .chk{flex-direction:row;align-items:center;gap:.4rem;font-size:.9rem;color:#222}
+ .badge{display:inline-block;background:#eef3fb;border-radius:4px;padding:0 6px;margin-right:.3rem;font-size:.8rem}
+ .pager{display:flex;gap:1rem;margin:1rem 0}
+ details summary{cursor:pointer;color:#1a55b0;margin-top:.6rem}
+</style>
 <form method="get">
- <label>Математический тег
-  <select name="tag"><option value="">— любой —</option>
-  {% for n in nodes %}<option value="{{ n.tag.pk }}" {% if n.tag.pk|stringformat:"s" == tag_id %}selected{% endif %}>{{ n.indent }}{{ n.tag }} ({{ n.total }})</option>{% endfor %}
-  </select></label>
- <label>Лемма<input name="lemma" value="{{ lemma }}" placeholder="например, свойство"></label>
- <label>Часть речи<input name="pos" value="{{ pos }}" size="6" placeholder="NOUN"></label>
+ <input type="hidden" name="go" value="1">
+ <fieldset>
+  <legend>Слово</legend>
+  <div class="grid">
+   <label>Словоформа<input name="form" value="{{ p.form }}"></label>
+   <label>Лемма<input name="lemma" value="{{ p.lemma }}"></label>
+   <label>Часть речи
+    <select name="pos"><option value="">—</option>
+     {% for o in opts.pos %}<option value="{{ o.value }}" {% if o.value == p.pos %}selected{% endif %}>{{ o.label }}</option>{% endfor %}
+    </select></label>
+  </div>
+  <details {% if p.feats %}open{% endif %}>
+   <summary>Грамматические признаки</summary>
+   <div class="grid" style="margin-top:.6rem">
+    {% for f in feat_rows %}
+     <label>{{ f.label }}
+      <select name="f_{{ f.key }}"><option value="">—</option>
+       {% for v in f.values %}<option value="{{ v.value }}" {% if v.value == f.selected %}selected{% endif %}>{{ v.label }}</option>{% endfor %}
+      </select></label>
+    {% endfor %}
+   </div>
+  </details>
+  <p><label class="chk"><input type="checkbox" name="exact" {% if p.exact %}checked{% endif %}> Полное совпадение (если снять — «содержит»)</label></p>
+  <p class="meta">Несколько вариантов в словоформе и лемме разделяйте знаком | (например: плюс|сложить).</p>
+ </fieldset>
+
+ <p><label class="chk"><input type="checkbox" id="math" name="math" {% if p.math %}checked{% endif %}> <b>Учитывать математическую разметку</b> (без галочки поиск идёт только по слову)</label></p>
+ <fieldset id="math-fs">
+  <legend>Математическая разметка</legend>
+  <div class="grid">
+   <label>Тег
+    <select name="tag"><option value="">— любой —</option>
+     {% for n in nodes %}<option value="{{ n.tag.pk }}" {% if n.tag.pk == p.tag %}selected{% endif %}>{{ n.indent }}{{ n.tag }} ({{ n.total }})</option>{% endfor %}
+    </select></label>
+   <label>Значение (Name)<input name="mname" value="{{ p.mname }}"></label>
+   <label>Фрагмент текста<input name="msurface" value="{{ p.msurface }}"></label>
+  </div>
+  <p><label class="chk"><input type="checkbox" name="sub" {% if p.sub %}checked{% endif %}> Включая подтеги</label>
+     <label class="chk"><input type="checkbox" name="mexact" {% if p.mexact %}checked{% endif %}> Полное совпадение для значения и фрагмента</label></p>
+ </fieldset>
  <button>Найти</button>
 </form>
-{% if searched %}
- <p><b>Найдено: {{ total }}</b>{% if total > shown %} (показано {{ shown }}){% endif %}</p>
+
+{% if page is not None %}
+ <p><b>Найдено: {{ page.paginator.count }}</b>{% if kind == "token" %} {% else %} (математические фрагменты){% endif %}</p>
  {% for r in results %}
-  <div class="res">{{ r.html }}<div class="meta">{{ r.note }} · <a href="{% url 'text_detail' r.text.pk %}">{{ r.text.title }}</a></div></div>
+  <div class="res">{{ r.html }}
+   <div class="meta">
+    {% for m in r.math %}<span class="badge">{{ m }}</span>{% endfor %}
+    {{ r.note }} · <a href="{% url 'text_detail' r.text.pk %}">{{ r.text.title }}</a>
+   </div>
+  </div>
  {% empty %}<p>Ничего не найдено.</p>{% endfor %}
+ {% if page.paginator.num_pages > 1 %}
+  <div class="pager">
+   {% if page.has_previous %}<a href="?{{ qs }}&page={{ page.previous_page_number }}">← назад</a>{% endif %}
+   <span>Страница {{ page.number }} из {{ page.paginator.num_pages }}</span>
+   {% if page.has_next %}<a href="?{{ qs }}&page={{ page.next_page_number }}">вперёд →</a>{% endif %}
+  </div>
+ {% endif %}
+{% elif p.submitted %}
+ <p>Задайте хотя бы одно условие поиска.</p>
 {% endif %}
+
+<script>
+(function () {
+  var cb = document.getElementById('math'), fs = document.getElementById('math-fs');
+  function sync() { fs.disabled = !cb.checked; }
+  cb.addEventListener('change', sync);
+  sync();
+})();
+</script>
 {% endblock %}
